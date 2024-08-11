@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".view.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_24sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/ic_photo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:hint="Name"
+            app:boxBackgroundColor="@color/colorWhite"
+            app:endIconMode="clear_text"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Medium"
+            app:startIconDrawable="@drawable/ic_user">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/FontPoppinsRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_palindrome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:hint="Palindrome"
+            app:boxBackgroundColor="@color/colorWhite"
+            app:endIconMode="clear_text"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Medium"
+            app:startIconDrawable="@drawable/ic_switch">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/FontPoppinsRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textNoSuggestions" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:backgroundTint="@color/colorPrimary"
+            android:clickable="true"
+            android:elevation="@dimen/_3sdp"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Check"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Medium" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@color/colorPrimary"
+            android:clickable="true"
+            android:elevation="@dimen/_3sdp"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Next"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Medium" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
